@@ -285,6 +285,20 @@ section{
     justify-content: space-between;
     border-bottom: 1px solid #d0d0d0;
 }
+.shri-lanka__photo{
+    width: 369.98px;
+    height: 189.98px;
+    margin-top: -33px;
+}
+.photo1{
+    background-image: url(img/Strani_Sri-Lanka_5-min\ 1.png);
+}
+.photo2{
+    background-image: url(img/regent.png);
+}
+.photo3{
+    background-image: url(img/cern.png);
+}
 .shri-lanka__paragraph{
     width: 195px;
     height: 49px;
