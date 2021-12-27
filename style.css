@@ -90,7 +90,12 @@ a:visited{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 142px;
+    width: 171px;
+}
+.contact_phone__icon{
+    background-image: url(img/phone__vector.png);
+    width: 39px;
+    height: 39px;
 }
 .header__search_maistra{
     display: flex;
@@ -307,4 +312,28 @@ section{
     display: flex;
     align-items: center;
     margin-top: 8px;
+}
+.place__card{
+    width: 1167.74px;
+    height: 537px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.card__place1,.card__place2{
+    height: 100%;
+    width: 569.74px;
+    display: flex;
+    flex-direction: column;
+}
+.photo__place{
+    width: 569.74px;
+    height: 320px;
+    margin-top: 0;
+}
+.place1{
+    background-image: url(img/place1.png);
+}
+.place2{
+    background-image: url(img/place2.png);
 }
