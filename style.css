@@ -346,9 +346,7 @@ section{
     width: 1170px;
     height: 1260px;
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
-    border: 1px solid #000;
     margin: 0 auto;
     margin-top: 90px;
     position: relative;
@@ -363,17 +361,18 @@ section{
     right: 12%;
 }
 .article__cards{
-    border: 1px solid #000;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    height: 1163px;
+    height: 1052px;
     width: 873.48px;
 }
 .article__footer{
-    border: 1px solid #000;
     width: 870px;
     height: 155px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .article__button{
     width: 270px;
@@ -387,7 +386,7 @@ section{
     margin: 0 auto;
 }
 .article__pages{
-    width: 447px;
+    width: 509px;
     height: 20px;
     display: flex;
     align-items: center;
@@ -397,8 +396,8 @@ section{
     display: flex;
     justify-content: space-between;
     width: 201px;
-    margin-left: -27px;
-    margin-bottom: -92px;
+    font-size: 12px;
+    font-weight: normal;
 }
 .number__pages{
     width: 196px;
@@ -406,4 +405,89 @@ section{
     display: flex;
     justify-content: space-between;
     margin-left: 50px;
+}
+.item__number{
+    border: 1px solid #969696;
+    width: 50px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+}
+.item__number > p{
+    padding: 2px 27px 3px 8px;
+}
+.link__page{
+    width: 136px;
+    height: 15px;
+    font-size: 12px;
+}
+.tours__card{
+    width: 270px;
+    height: 1158px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 79px;   
+}
+.card__category{
+    width: 100%;
+    height: 340px;
+    border: 1px solid #dddddd;
+}
+.red__block{
+    width: 100%;
+    height: 6px;
+    background-color: rgb(255, 0, 0);
+}
+.card__title{
+    height: 39px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #323232;
+    background-color: #f8f8f8;
+    display: flex;
+    align-items: center;
+}
+.category__list{
+    padding-left: 20px;
+    font-size: 15px;
+    color: #4f4f4f;
+    height: 36px;
+    border-bottom: 1px solid #dddddd;
+    display: flex;
+    align-items: center;
+}
+.border__bottom{
+    border: 1px solid #c4c4c4;
+    margin-top: 44px;
+    width: 270px;
+}
+.card__promotion{
+    width: 270px;
+    height: 355px;
+    margin-top: 42px;
+    border: 1px solid #dddddd;
+}
+.promotion__photo{
+    width: 270px;
+    height: 142.8px ;
+    background-image: url(img/mandarina\ 2.png);
+    margin-top: -35px;
+}
+.promotion__title h4{
+    font-size: 14px;
+    color: #323232;
+    margin-left: 20px;
+    text-transform: uppercase;
+}
+.promotion__paragraph p{
+    width: 199px;
+    height: 34px;
+    font-size: 12px;
+    color: #828282;
+    margin-left: 20px;
+}
+.border__b{
+    width: 197px;
+    height: 1px;
+    margin: 0 auto;
 }
