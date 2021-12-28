@@ -159,6 +159,7 @@ li{
 }
 a{
     text-decoration: none;
+    color: #000;
 }
 .nav__list > a{
     color: #000;
@@ -336,4 +337,73 @@ section{
 }
 .place2{
     background-image: url(img/place2.png);
+}
+.slider{
+    width: 100%;
+    height: 580px;
+}
+.all__article{
+    width: 1170px;
+    height: 1260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #000;
+    margin: 0 auto;
+    margin-top: 90px;
+    position: relative;
+    z-index: 1;
+}
+.plane{
+    background-image: url(img/літачок\ \(1\).png);
+    width: 255.41px;
+    height: 326.12px;
+    position: absolute;
+    top: -20.5%;
+    right: 12%;
+}
+.article__cards{
+    border: 1px solid #000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 1163px;
+    width: 873.48px;
+}
+.article__footer{
+    border: 1px solid #000;
+    width: 870px;
+    height: 155px;
+}
+.article__button{
+    width: 270px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #969696;
+    color: #969696;
+    border-radius: 2px;
+    margin: 0 auto;
+}
+.article__pages{
+    width: 447px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+.list{
+    display: flex;
+    justify-content: space-between;
+    width: 201px;
+    margin-left: -27px;
+    margin-bottom: -92px;
+}
+.number__pages{
+    width: 196px;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
 }
