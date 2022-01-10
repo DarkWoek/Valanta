@@ -1,8 +1,7 @@
 body{
     max-width: 1440px;
-    height: 3950px;
+    height: 3984px;
     margin:0 auto ;
-    border: 1px solid #000;
     font-family: 'Montserrat', sans-serif;
 }
 .maket__header{
@@ -161,21 +160,26 @@ a{
     text-decoration: none;
     color: #000;
 }
-.nav__list > a{
-    color: #000;
-    font-weight: normal;
-    transition: all .1s ease-in;
+a:hover{
+    color: #DD4053;
+}
+.nav__list{
+    position: relative;
 }
 .nav__list > a:hover{
-    font-weight: 600;
-    transition: all .1s ease-in;
+    color: #000;
 }
-li:hover > .border{
-    position:relative;
-    top:70%;
-    transition: all .3s ease-in;
+.nav__list > a{
+    color: #616161;
+}
+.nav__list:hover::before{
+    content: '';
+    width: 100%;
     height: 2px;
-    background-color: sandybrown;
+    color: #000;
+    background-color: #DD4053;
+    position: absolute;
+    top: 47px;
 }
 .web__page{
     display: flex;
@@ -421,12 +425,17 @@ section{
     height: 15px;
     font-size: 12px;
 }
+.slider{
+    width: 1400px;
+    height: 580px;
+    background-color: #f8f8f8;
+}
 .tours__card{
     width: 270px;
     height: 1158px;
     display: flex;
     flex-direction: column;
-    margin-top: 79px;   
+    margin-top: 79px;  
 }
 .card__category{
     width: 100%;
@@ -458,13 +467,13 @@ section{
 }
 .border__bottom{
     border: 1px solid #c4c4c4;
-    margin-top: 44px;
+    margin-top: 30px;
     width: 270px;
 }
 .card__promotion{
     width: 270px;
     height: 355px;
-    margin-top: 42px;
+    margin-top: 30px;
     border: 1px solid #dddddd;
 }
 .promotion__photo{
@@ -490,4 +499,168 @@ section{
     width: 197px;
     height: 1px;
     margin: 0 auto;
+}
+.promotion__value{
+    width: 179px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    margin-top: 13px;
+}
+.promotion__describe p {
+    width: 210px;
+    height: 20px;
+    position: relative;
+    bottom: 36px;
+    font-size: 12px;
+    color: #c9c9c9;
+    margin-left: 20px;
+}
+.card__subscribe{
+    width: 270px;
+    height: 340px;
+    margin-top: 30px;
+    background-color: #f8f8f8;
+    border: 1px solid #dddddd;
+}
+.subscribe__title h4{
+    margin-left: 20px;
+    width: 193px;
+    font-size: 18px;
+    margin-top: 20px;
+}
+.card__subscribe .input{
+    width: 230px;
+    height: 40px;
+    border: 1px solid #c4c4c4;
+    margin-left: 20px;
+    border-radius: 2px;
+    margin-bottom: 10px;
+}
+.name__input{
+    margin-top: -9px;
+}
+
+::placeholder{
+    text-indent: 20px;
+    color: #969696;
+    font-size: 14px;
+}
+.checkbox{
+    position: relative;
+    margin-top: 26px;
+}
+.checkbox__input{
+    appearance:none;
+    position: absolute;
+}
+.checkbox__label{
+    color: #969696;
+    padding-left: 65px;
+}
+.checkbox__label::before{
+    content: "";
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    border: 1px solid #DD4053;
+    border-radius: 50%;
+    position: absolute;
+    top: -2px;
+    left: 0;
+    z-index: 1;
+    margin-left: 20px;
+}
+.checkbox__label:after{
+    content: "";
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-image: url(img/Vector\ \(circle\).png);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 7px;
+    left: 27px;
+    z-index: 2;
+    opacity: 0;
+}
+.checkbox__input:checked + .checkbox__label:before{
+    background-color: #DD4053;
+}
+.checkbox__input:checked + .checkbox__label:after{
+    opacity: 1;
+}
+.sub__btn{
+    width: 230px;
+    height: 50px;
+    margin-top: 27px;
+    margin-left: 20px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    background: #DD4053;
+    border: 0;
+    border-radius: 2px;
+}
+footer{
+    height: 260px;
+    width: 100%;
+    margin-top: 93px;
+    display: flex;
+    justify-content: center;
+}
+.footer{
+    width: 1170px;
+    height: 128px;
+    margin-top: 60px;
+}
+.footer__section{
+    width: 724px;
+    height: 91px;
+}
+.footer__first{
+    height: 127px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 15px;
+    border-bottom: 2px solid rgba(29,29,29,0.2);
+    border-radius: 2px;
+}
+.footer__section{
+    display: flex;
+    font-size: 15px;
+    font-weight: 400;
+}
+.footer__enterteiment{
+    position: relative;
+    right: 41px;
+    bottom: 4px;
+    line-height: 18px;
+}
+.footer__info{
+    margin-left: -2px;
+    position: relative;
+    bottom: 4px;
+}
+.work__time{
+    position: relative;
+    bottom: 4px;
+    margin-left: 84px;
+}
+.phone__contact{
+    position: relative;
+    left: 80px;
+    line-height: 12px;
+}
+.paragraph__label{
+    color: rgba(128, 128, 128,0.5);
+    font-size: 14px;
+}
+.footer__second{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 22px;
 }
