@@ -3,6 +3,7 @@ body{
     height: 3984px;
     margin:0 auto ;
     font-family: 'Montserrat', sans-serif;
+    background-color: black;
 }
 .maket__header{
     height: 100px;
@@ -363,6 +364,20 @@ section{
     position: absolute;
     top: -20.5%;
     right: 12%;
+}
+.rev__slider{
+    width: 1170px;
+    height: 400px;
+    background-color: #c9c9c9;
+    margin: 0 auto;
+}
+.slick-track{
+    display: flex;
+    flex-direction: row;
+    width: 4470px;
+}
+.slick-prev:before, .slick-next:before{
+    color: black;
 }
 .article__cards{
     display: flex;
